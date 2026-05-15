@@ -5,10 +5,23 @@
 
 {% block body %}
 
-
+    <!--And I'm not going to submit it to Google, for instance, this week.
+I'm instead going to submit it to my very own route, which doesn't yet exist,-->
 <form action="/" method="post">
-
+    <!--And the method I want to use is going to be specifically
+get in contrast with post, because I do want
+to use get so that the parameters very visibly appear in the URL,
+if only so that I can show you what's happening.
+If I were to use post instead, recall that sort of hides the input still
+in the envelope but more deeply inside of it
+so it's not exposed in the URL, which is appropriate for anything personal.
+Maybe an email address, maybe a credit card number, a password or the like. so person name only so in url-->
     <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
+    <!--The name here is the name of the HTML attribute that comes with the input tag
+if you want to use it.
+Placeholder here is another attribute that can be used with the input element.
+So even though we're seeing lots of names and lots of placeholders,
+they're the same idea, but they mean different things in different contexts.-->
 
 <button type="submit">GREET</button>
 </form>
